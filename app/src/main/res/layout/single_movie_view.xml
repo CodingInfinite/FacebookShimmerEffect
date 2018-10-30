@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:weightSum="2"
+              android:layout_marginTop="10dp"
+              android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/background"
+                    android:layout_height="160dp">
+
+                <ImageView
+                        android:id="@+id/leftMoviePosterImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"/>
+
+                <TextView
+                        android:id="@+id/leftMovieRatingTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#fff"
+                        android:textSize="13sp" android:layout_marginRight="10dp"/>
+
+            </FrameLayout>
+
+            <TextView
+                    android:id="@+id/leftMovieTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/background"
+                    android:textColor="#BDBDBD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/background"
+                    android:layout_height="160dp">
+
+                <ImageView
+                        android:id="@+id/rightMoviePosterImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"/>
+
+                <TextView
+                        android:id="@+id/rightMovieRatingTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="#fff"
+                        android:textSize="13sp" android:layout_marginRight="10dp"/>
+
+            </FrameLayout>
+
+            <TextView
+                    android:id="@+id/rightMovieTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/background"
+                    android:textColor="#BDBDBD"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
